@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+
+}
+
+.flex {
+    display: flex;
+}
+
+#menu {
+    color: white;
+    background-color: black;
+    display: flex;
+}
+
+.menu-item {
+    padding: 5px 25px;
+    position: relative;
+}
+
+.list-menu-item-child {
+    position: absolute;
+
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+}
+
+.menu-item:hover {
+    background-color: red;
+}
+
+.menu-item:hover .list-menu-item-child {
+    visibility: visible;
+    opacity: 1;
+}
+
+.list-menu-item-child {
+    background-color: black;
+}
+
+.list-menu-item-child li:hover {
+    background-color: red;
+    width: 100%;
+}
+
+.list-menu-item-child li {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+ul {
+    list-style: none;
+}
